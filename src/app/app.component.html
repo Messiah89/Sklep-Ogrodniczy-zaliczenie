@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>Sklep Azalia</head>
+
+<body>
+  <div class="toolbar" role="banner"><img width="70" alt="Sklep Logo"
+      src="https://lh3.googleusercontent.com/proxy/BlmHennvDgyz3mhyDETdGVmQpoiTQwHSWAHgRFrHFEdX7UWuWtMKVW9Yp9p0qW8lvTpt5tHXo_4D1gdYF6xa4cgHRaJAXi3yZDOOk8x9Zj_OH156TZJta4rrvsgFjJb6bio" /><span>Sklep
+      Ogrodniczy "AZALIA"</span>
+    <nav class="nawigacja">
+      <a routerLink="/onas">O nas</a>
+      <a routerLink="/artykuly">Artykuły</a>
+      <a routerLink="/dodajartykuly">Dodaj artykuł</a>
+    </nav>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div style="text-align: center">
+    <div>
+      <h1>
+        Witamy w {{ title }}!
+      </h1>
+    </div>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <footer>
+    All rights reserved!
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <div>Artykuł numer:
+      <input type="text" [(ngModel)]="artykuly.number" name="number">
+    </div>
+    <div>Nazwa artykułu:
+      <input type="text" [(ngModel)]="artykuly.name" name="name">
+    </div>
+    <div>Cena netto:
+      <input type="text" [(ngModel)]="artykuly.price" name="price">
+    </div>
+    <div>Stawka VAT:
+      <input type="text" [(ngModel)]="artykuly.vat" name="vat">
+    </div>
+    <div>Liczba sztuk w magazynie:
+      <input type="text" [(ngModel)]="artykuly.amount" name="amount">
+    </div>
+    <div>
+      <button type="submit">Zapisz</button>
+      <button type="button" (click)="onClear()">Wyczyść</button>
+    </div>
+  </form>
+</div>

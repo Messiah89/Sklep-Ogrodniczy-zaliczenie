@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<div class="card">
+  <div class="card-header">
+    <h4>{{title}}</h4>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table" *ngIf='artykuly && artykuly.length'>
+    <thead class="thead-dark">
+      <tr style="text-align: center">
+        <th style="width: 15%;">Artykuł numer:</th>
+        <th style="width: 15%;">Nazwa artykułu:</th>
+        <th style="width: 15%;">Cena netto:</th>
+        <th style="width: 15%;">Stawka VAT:</th>
+        <th style="width: 15%;">Liczba sztuk w magazynie:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let artykuly of artykuly' style="text-align: center">
+        <td>{{artykuly.number}}</td>
+        <td>{{artykuly.name}}</td>
+        <td>{{artykuly.price}}</td>
+        <td>{{artykuly.vat}}</td>
+        <td>{{artykuly.amount}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</html>
